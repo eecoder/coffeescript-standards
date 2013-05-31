@@ -29,6 +29,26 @@ $ ->
     console.log("I'm actually not that complicated.")
 ```
 
+### Inline
+
+Inline comments are placed on the line immediately above the statement that they are describing.
+
+All inline comments should start with a # and a single space.
+
+__No__
+```
+# Increment x
+x = x + 1
+```
+
+__Yes__
+```
+# Compensate for border
+x = x + 1
+```
+
+Do not use inline comments when they state the obvious:
+
 ======================
 
 ## Selectors
