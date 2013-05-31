@@ -35,6 +35,8 @@ Inline comments are placed on the line immediately above the statement that they
 
 All inline comments should start with a # and a single space.
 
+Do not use inline comments when they state the obvious:
+
 __No__
 ```
 # Increment x
@@ -46,8 +48,6 @@ __Yes__
 # Compensate for border
 x = x + 1
 ```
-
-Do not use inline comments when they state the obvious:
 
 ======================
 
