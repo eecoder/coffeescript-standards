@@ -1,8 +1,17 @@
-EECodeer/Visual Chef Coffeescript Standards
+EECoder/Visual Chef Coffeescript Standards
 ======================
 
 A concise document to help you write quality coffeescript.
 
+* [Comments](#comments)
+    * [Blocks](#blocks)
+    * [Inline](#inline)
+* [Selectors](#selectors)
+* [Naming Conventions](#naming-conventions)
+
+======================
+
+<a name="comments"/>
 ## Comments
 
 If modifying code that is described by an existing comment, update the comment such that it accurately reflects the new code.
@@ -11,6 +20,7 @@ The first word of the comment should be capitalized, unless the first word is an
 
 If a comment is short, the period at the end can be omitted.
 
+<a name="blocks"/>
 ### Blocks
 
 Block comments apply to the block of code that follows them.
@@ -19,7 +29,7 @@ Each line of a block comment starts with a `#` and a single space, and should be
 
 Paragraphs inside of block comments are separated by a line containing a single `#`.
 
-```
+```coffeescript
 # Below is a seriously complicated function.
 # So I'm giving it a really helpful and descriptive
 # comment to help myself and others understand.
@@ -29,6 +39,7 @@ $ ->
     console.log("I'm actually not that complicated.")
 ```
 
+<a name="inline"/>
 ### Inline
 
 Inline comments are placed on the line immediately above the statement that they are describing.
@@ -38,21 +49,49 @@ All inline comments should start with a # and a single space.
 Do not use inline comments when they state the obvious:
 
 __No__
-```
+```coffeescript
 # Increment x
 x = x + 1
 ```
 
 __Yes__
-```
+```coffeescript
 # Compensate for border
 x = x + 1
 ```
 
 ======================
 
+<a name="selectors"/>
 ## Selectors
 
-Try to prefix all javascript-based selectors with js-. This is taken from [http://ozmm.org/posts/slightly_obtrusive_javascript.html](slightly obtrusive javascript). The idea is that you should be able to tell a presentational class from a functional class. Most of the codebase doesn't do this, let's try and move toward it.
+Prefix all javascript-based selectors with js-. This is taken from [http://ozmm.org/posts/slightly_obtrusive_javascript.html](slightly obtrusive javascript).
+
+```
+<div class="graphical-selector">I make things pretty and give the site a soul.</div>
+
+<div class="js-functional-selector">I make things work and give the site heart.</div>
+```
+
+======================
+
+<a name="naming-conventions"/>
+## Naming Conventions
+
+Use `camelCase` (with a leading lowercase character) to name all variables, methods, and object properties.
+
+Use `CamelCase` (with a leading uppercase character) to name all classes.
+
+For constants, use all uppercase with underscores:
+
+```coffeescript
+CONSTANT_LIKE_THIS
+```
+
+Methods and variables that are intended to be "private" should begin with a leading underscore:
+
+```coffeescript
+_privateMethod: ->
+```
 
 __Inspired by: [https://github.com/polarmobile/coffeescript-style-guide](Coffeescript-style-guide)__
