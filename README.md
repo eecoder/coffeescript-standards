@@ -6,6 +6,7 @@ A concise document to help you write quality coffeescript.
 * [Comments](#comments)
     * [Blocks](#blocks)
     * [Inline](#inline)
+* [Selectors](#selectors)
 
 ======================
 
@@ -60,6 +61,7 @@ x = x + 1
 
 ======================
 
+<a name="selectors"/>
 ## Selectors
 
 Prefix all javascript-based selectors with js-. This is taken from [http://ozmm.org/posts/slightly_obtrusive_javascript.html](slightly obtrusive javascript).
