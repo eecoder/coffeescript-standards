@@ -3,6 +3,13 @@ EECodeer/Visual Chef Coffeescript Standards
 
 A concise document to help you write quality coffeescript.
 
+* [Comments](#comments)
+    * [Blocks](#blocks)
+    * [Inline](#inline)
+
+======================
+
+<a name="comments"/>
 ## Comments
 
 If modifying code that is described by an existing comment, update the comment such that it accurately reflects the new code.
@@ -11,6 +18,7 @@ The first word of the comment should be capitalized, unless the first word is an
 
 If a comment is short, the period at the end can be omitted.
 
+<a name="blocks"/>
 ### Blocks
 
 Block comments apply to the block of code that follows them.
@@ -29,6 +37,7 @@ $ ->
     console.log("I'm actually not that complicated.")
 ```
 
+<a name="inline"/>
 ### Inline
 
 Inline comments are placed on the line immediately above the statement that they are describing.
