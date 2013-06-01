@@ -59,6 +59,6 @@ Prefix all javascript-based selectors with js-. This is taken from [http://ozmm.
 <div class="graphical-selector">I make things pretty and give the site a soul.</div>
 
 <div class="js-functional-selector">I make things work and give the site heart.</div>
-````
+```
 
 __Inspired by: [https://github.com/polarmobile/coffeescript-style-guide](Coffeescript-style-guide)__
