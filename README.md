@@ -1,4 +1,4 @@
-EECodeer/Visual Chef Coffeescript Standards
+EECoder/Visual Chef Coffeescript Standards
 ======================
 
 A concise document to help you write quality coffeescript.
