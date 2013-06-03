@@ -3,11 +3,50 @@ EECoder/Visual Chef Coffeescript Standards
 
 A concise document to help you write quality coffeescript.
 
+* [Layout](#layout)
+    * [Spaces](#spaces)
+    * [Blank Lines](#blank-lines)
 * [Comments](#comments)
     * [Blocks](#blocks)
     * [Inline](#inline)
 * [Selectors](#selectors)
 * [Naming Conventions](#naming-conventions)
+
+======================
+
+<a name="layout"/>
+## Layout
+
+General best practices for all the top level coffeescript development.
+
+<a name="spaces"/>
+### Spaces
+
+2 spaces for indents, no tabs.  No whining, this seems to be the way most of the js community does it. :stuck_out_tongue_closed_eyes:
+
+<a name="blank-lines"/>
+### Blank Lines
+
+Separate top-level function and class definitions with a single blank line.
+
+```coffeescript
+-> $
+  console.log 'time to eat'
+
+class Taco
+```
+
+Separate method definitions inside of a class with a single blank line.
+
+```coffeescript
+class Taco
+
+  pay: (count)
+
+  eat: (count)
+```
+
+Use a single blank line within the bodies of methods or functions in cases where this improves readability (e.g., for the purpose of delineating logical sections).
 
 ======================
 
