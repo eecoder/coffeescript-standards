@@ -31,7 +31,7 @@ Separate top-level function and class definitions with a single blank line.
 
 ```coffeescript
 -> $
-  console.log time to eat'
+  console.log 'time to eat'
 
 class Taco
 ```
