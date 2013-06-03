@@ -3,6 +3,8 @@ EECoder/Visual Chef Coffeescript Standards
 
 A concise document to help you write quality coffeescript.
 
+* [Layout](#layout)
+    * [Spaces](#spaces)
 * [Comments](#comments)
     * [Blocks](#blocks)
     * [Inline](#inline)
@@ -11,6 +13,17 @@ A concise document to help you write quality coffeescript.
 
 ======================
 
+<a name="layout"/>
+## Layout
+
+General best practices for all the top level coffeescript development.
+
+<a name="spaces"/>
+### Spaces
+
+2 spaces for indents, no tabs.  No whining, this seems to be the way most of the js community does it. :exclamation: 
+
+======================
 <a name="comments"/>
 ## Comments
 
