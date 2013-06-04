@@ -9,9 +9,9 @@ A concise document to help you write quality coffeescript.
 * [Comments](#comments)
     * [Blocks](#blocks)
     * [Inline](#inline)
+* [Naming Conventions](#naming-conventions)
 * [Module Imports](#module-imports)
 * [Selectors](#selectors)
-* [Naming Conventions](#naming-conventions)
 
 ======================
 
@@ -102,6 +102,27 @@ x = x + 1
 
 ======================
 
+<a name="naming-conventions"/>
+## Naming Conventions
+
+Use `camelCase` (with a leading lowercase character) to name all variables, methods, and object properties.
+
+Use `CamelCase` (with a leading uppercase character) to name all classes.
+
+For constants, use all uppercase with underscores:
+
+```coffeescript
+CONSTANT_LIKE_THIS
+```
+
+Methods and variables that are intended to be "private" should begin with a leading underscore:
+
+```coffeescript
+_privateMethod: ->
+```
+
+======================
+
 <a name="module-imports"/>
 ## Module Imports
 
@@ -128,27 +149,6 @@ Prefix all javascript-based selectors with js-. This is taken from [http://ozmm.
 <div class="graphical-selector">I make things pretty and give the site a soul.</div>
 
 <div class="js-functional-selector">I make things work and give the site heart.</div>
-```
-
-======================
-
-<a name="naming-conventions"/>
-## Naming Conventions
-
-Use `camelCase` (with a leading lowercase character) to name all variables, methods, and object properties.
-
-Use `CamelCase` (with a leading uppercase character) to name all classes.
-
-For constants, use all uppercase with underscores:
-
-```coffeescript
-CONSTANT_LIKE_THIS
-```
-
-Methods and variables that are intended to be "private" should begin with a leading underscore:
-
-```coffeescript
-_privateMethod: ->
 ```
 
 __Inspired by: [https://github.com/polarmobile/coffeescript-style-guide](Coffeescript-style-guide)__
