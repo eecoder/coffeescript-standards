@@ -6,6 +6,7 @@ A concise document to help you write quality coffeescript.
 * [Layout](#layout)
     * [Spaces](#spaces)
     * [Blank Lines](#blank-lines)
+* [Whitespace in Expressions and Statements](#whitespace)
 * [Comments](#comments)
     * [Blocks](#blocks)
     * [Inline](#inline)
@@ -51,6 +52,75 @@ Use a single blank line within the bodies of methods or functions in cases where
 
 ======================
 
+<a name="whitespace"/>
+## Whitespace in Expressions and Statements
+
+__Do Not Add Extra Spaces:__
+
+Immediately inside parentheses, brackets or braces
+
+:-1: __No__
+```coffeescript
+element: $( ".widget" )
+```
+
+:+1: __Yes__
+```coffeescript
+element: $(".widget")
+```
+
+Before commas
+
+:-1: __No__
+```coffeescript
+noms = (pizza , tacos) ->
+```
+
+:+1: __Yes__
+```coffeescript
+noms = (pizza, tacos) ->
+```
+
+Additional recommendations:
+
+- Always surround these binary operators with a **single space** on either side
+
+    - assignment: `=`
+
+        - _Note that this also applies when indicating default parameter value(s) in a function declaration_
+
+        :-1: __No__
+        ```coffeescript
+           test: (param=null) ->
+        ```
+
+        :+1: __Yes__
+        ```coffeescript
+           test: (param = null) ->
+        ```
+
+    - augmented assignment: `+=`, `-=`, etc.
+    - comparisons: `==`, `<`, `>`, `<=`, `>=`, `unless`, etc.
+    - arithmetic operators: `+`, `-`, `*`, `/`, etc.
+
+    - _(Do not use more than one space around these operators)_
+
+        :-1: __No__
+        ```coffeescript
+           x      = 1
+           y      = 1
+           fooBar = 3
+        ```
+
+        :+1: __Yes__
+        ```coffeescript
+           x = 1
+           y = 1
+           fooBar = 3
+        ```
+
+======================
+
 <a name="comments"/>
 ## Comments
 
@@ -88,13 +158,13 @@ All inline comments should start with a # and a single space.
 
 Do not use inline comments when they state the obvious:
 
-__No__
+:-1: __No__
 ```coffeescript
 # Increment x
 x = x + 1
 ```
 
-__Yes__
+:+1: __Yes__
 ```coffeescript
 # Compensate for border
 x = x + 1
