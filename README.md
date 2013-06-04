@@ -9,6 +9,7 @@ A concise document to help you write quality coffeescript.
 * [Comments](#comments)
     * [Blocks](#blocks)
     * [Inline](#inline)
+* [Module Imports](#module-imports)
 * [Selectors](#selectors)
 * [Naming Conventions](#naming-conventions)
 
@@ -98,6 +99,23 @@ __Yes__
 # Compensate for border
 x = x + 1
 ```
+
+======================
+
+<a name="module-imports"/>
+## Module Imports
+
+If using a module system (CommonJS Modules, AMD, etc.), require statements should be placed on separate lines.
+
+```coffeescript
+require 'lib/setup'
+Backbone = require 'backbone'
+```
+
+These statements should be grouped in the following order:
+* Standard library imports (if a standard library exists)
+* Third party library imports
+* Local imports (imports specific to this application or library)
 
 ======================
 
