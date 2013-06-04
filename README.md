@@ -9,8 +9,9 @@ A concise document to help you write quality coffeescript.
 * [Comments](#comments)
     * [Blocks](#blocks)
     * [Inline](#inline)
-* [Selectors](#selectors)
 * [Naming Conventions](#naming-conventions)
+* [Module Imports](#module-imports)
+* [Selectors](#selectors)
 
 ======================
 
@@ -30,7 +31,7 @@ General best practices for all the top level coffeescript development.
 Separate top-level function and class definitions with a single blank line.
 
 ```coffeescript
--> $
+$ ->
   console.log 'time to eat'
 
 class Taco
@@ -101,19 +102,6 @@ x = x + 1
 
 ======================
 
-<a name="selectors"/>
-## Selectors
-
-Prefix all javascript-based selectors with js-. This is taken from [http://ozmm.org/posts/slightly_obtrusive_javascript.html](slightly obtrusive javascript).
-
-```
-<div class="graphical-selector">I make things pretty and give the site a soul.</div>
-
-<div class="js-functional-selector">I make things work and give the site heart.</div>
-```
-
-======================
-
 <a name="naming-conventions"/>
 ## Naming Conventions
 
@@ -131,6 +119,36 @@ Methods and variables that are intended to be "private" should begin with a lead
 
 ```coffeescript
 _privateMethod: ->
+```
+
+======================
+
+<a name="module-imports"/>
+## Module Imports
+
+If using a module system (CommonJS Modules, AMD, etc.), require statements should be placed on separate lines.
+
+```coffeescript
+require 'lib/setup'
+Backbone = require 'backbone'
+```
+
+These statements should be grouped in the following order:
+* Standard library imports (if a standard library exists)
+* Third party library imports
+* Local imports (imports specific to this application or library)
+
+======================
+
+<a name="selectors"/>
+## Selectors
+
+Prefix all javascript-based selectors with js-. This is taken from [http://ozmm.org/posts/slightly_obtrusive_javascript.html](slightly obtrusive javascript).
+
+```
+<div class="graphical-selector">I make things pretty and give the site a soul.</div>
+
+<div class="js-functional-selector">I make things work and give the site heart.</div>
 ```
 
 __Inspired by: [https://github.com/polarmobile/coffeescript-style-guide](Coffeescript-style-guide)__
