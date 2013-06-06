@@ -13,6 +13,7 @@ A concise document to help you write quality coffeescript.
 * [Naming Conventions](#naming-conventions)
 * [Module Imports](#module-imports)
 * [Selectors](#selectors)
+* [Strings](#strings)
 
 ======================
 
@@ -220,5 +221,24 @@ Prefix all javascript-based selectors with js-. This is taken from [http://ozmm.
 
 <div class="js-functional-selector">I make things work and give the site heart.</div>
 ```
+
+======================
+
+<a name="strings"/>
+## Strings
+
+Use string interpolation instead of string concatenation:
+
+:-1: __No__
+```coffeescript
+"this is an " + adjective + " string"
+```
+
+:+1: __Yes__
+```coffeescript
+"this is an #{adjective} string"
+```
+
+Prefer single quoted strings (`''`) instead of double quoted (`""`) strings, unless features like string interpolation are being used for the given string.
 
 __Inspired by: [https://github.com/polarmobile/coffeescript-style-guide](Coffeescript-style-guide)__
