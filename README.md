@@ -274,7 +274,7 @@ Annotation types:
 - `HACK`: describe the use of a questionable (or ingenious) coding practice
 - `REVIEW`: describe code that should be reviewed to confirm implementation
 
-<a name="#extending_native_objects"/>
+<a name="#native"/>
 ## Extending Native Objects
 
 Do not modify native objects.  It will make it too hard to for other devs to jump in and out of projects.
