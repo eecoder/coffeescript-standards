@@ -15,6 +15,7 @@ A concise document to help you write quality coffeescript.
 * [Selectors](#selectors)
 * [Strings](#strings)
 * [Annotations](#annotations)
+* [Extending Native Objects](#native)
 
 ======================
 
@@ -272,5 +273,10 @@ Annotation types:
 - `REFACTOR`: describe code that is inefficient and may become a bottleneck
 - `HACK`: describe the use of a questionable (or ingenious) coding practice
 - `REVIEW`: describe code that should be reviewed to confirm implementation
+
+<a name="#extending_native_objects"/>
+## Extending Native Objects
+
+Do not modify native objects.  It will make it too hard to for other devs to jump in and out of projects.
 
 __Inspired by: [https://github.com/polarmobile/coffeescript-style-guide](Coffeescript-style-guide)__
