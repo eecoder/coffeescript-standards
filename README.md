@@ -279,4 +279,4 @@ Annotation types:
 
 Do not modify native objects.  It will make it too hard to for other devs to jump in and out of projects.
 
-__Inspired by: [https://github.com/polarmobile/coffeescript-style-guide](Coffeescript-style-guide)__
+__Inspired by: [Coffeescript-style-guide](https://github.com/polarmobile/coffeescript-style-guide)__
